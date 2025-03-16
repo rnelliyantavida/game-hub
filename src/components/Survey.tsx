@@ -43,6 +43,7 @@ function Survey() {
             top="5px"
             right="5px"
             size="sm"
+            zIndex={10}
           />
           <ModalBody>
             <iframe
