@@ -5,9 +5,9 @@ import {
   ModalHeader,
   ModalBody,
   IconButton,
+  CloseButton,
   useDisclosure,
 } from "@chakra-ui/react";
-import { CloseIcon } from "@chakra-ui/icons";
 
 function Survey() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -36,16 +36,13 @@ function Survey() {
         <ModalOverlay />
         <ModalContent>
           {/* <ModalHeader>My Custom Dialog</ModalHeader> */}
-          <IconButton
+          <CloseButton
             aria-label="Close survey"
-            icon={<CloseIcon />}
             onClick={onClose}
             position="absolute"
             top="5px"
             right="5px"
             size="sm"
-            background="transparent"
-            _hover={{ bg: "red.200" }}
           />
           <ModalBody>
             <iframe
