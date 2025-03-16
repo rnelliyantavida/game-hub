@@ -53,7 +53,7 @@ function Survey() {
             <iframe
               src="https://qualtricsxmrcdv9zxbz.qualtrics.com/jfe/form/SV_5jOy4YtMuTA8cjc?FirstName=Ruksana"
               width="500px"
-              height="500px"
+              height="400px"
             ></iframe>
           </ModalBody>
           {/* <ModalFooter>
