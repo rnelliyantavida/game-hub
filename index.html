@@ -8,6 +8,42 @@
   </head>
   <body>
     <div id="root"></div>
+    <script type="text/javascript">
+      (function () {
+        // Function to create and display the feedback button
+        function createFeedbackButton() {
+          var button = document.createElement("button");
+          button.textContent = "Give Feedback";
+          button.style.position = "fixed";
+          button.style.bottom = "20px";
+          button.style.right = "20px";
+          button.style.padding = "15px";
+          button.style.fontSize = "16px";
+          button.style.backgroundColor = "#4CAF50";
+          button.style.color = "#fff";
+          button.style.border = "none";
+          button.style.borderRadius = "5px";
+          button.style.cursor = "pointer";
+
+          // Event listener for button click to open the survey
+          button.addEventListener("click", function () {
+            window.open(
+              "https://qualtricsxmrcdv9zxbz.qualtrics.com/jfe/form/SV_5jOy4YtMuTA8cjc",
+              "_blank"
+            );
+          });
+
+          // Append the button to the body of the page
+          document.body.appendChild(button);
+        }
+
+        // Create the button after the page is fully loaded
+        window.addEventListener("load", function () {
+          createFeedbackButton();
+        });
+      })();
+    </script>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
