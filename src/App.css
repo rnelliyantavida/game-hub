@@ -1,0 +1,4 @@
+.chakra-ui-dark .css-pv22qu:not([data-theme]), [data-theme="dark"] .css-pv22qu:not([data-theme]), .css-pv22qu[data-theme="dark"] {
+    --modal-bg: none !important;
+    --modal-shadow: none !important;
+}
